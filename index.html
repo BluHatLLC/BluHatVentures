@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluHat - Venture Incubators</title>
+    <link rel="canonical" href="https://www.bluhatventures.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            background-color: #0d47a1;
+            padding: 15px 20px;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(to bottom, #0d47a1, #1976d2);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero p.venture {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .hero button:hover {
+            background-color: white;
+            color: #0d47a1;
+        }
+        .projects {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .project-card {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(88, 166, 255, 0.2);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: scale-down;
+            border: 2px solid #58a6ff;
+            border-radius: 5px;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        .contact {
+            background-color: #0d1117;
+            color: #58a6ff;
+            padding: 50px;
+            text-align: center;
+        }
+        .contact a {
+            color: #58a6ff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        BluHat
+        <span style="float: right; font-size: 2rem; cursor: pointer;">&#9776;</span>
+    </div>
+    <div class="hero">
+        <p class="venture">Venture Incubator</p>
+        
+        <button onclick="window.location.href='mailto:jon@bluhat.app'">Contact Us</button>
+        <p style="font-size: 2rem; font-weight: bold; margin-top: 50px;">Turning Ideas into Reality</p>
+    </div>
+    <div class="projects container">
+        <h1 class="mb-4">Our Projects</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <a href="https://stepguide.app" target="_blank">
+                        <img src="static/images/sg.png" alt="StepGuide Image">
+                    </a>
+                    <h3>StepGuide</h3>
+                    <p>Guided workflows for efficient task completion.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <a href="https://dynbo.com" target="_blank">
+                        <img src="static/images/dynbo.png" alt="Dynbo Image">
+                    </a>
+                    <h3>Dynbo</h3>
+                    <p>Smart guest service management via SMS.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <a href="https://buylist.app" target="_blank">
+                        <img src="static/images/bl.png" alt="BuyList Image">
+                    </a>
+                    <h3>BuyList</h3>
+                    <p>Minimalist shopping list maker.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <p>&copy; 2025 BluHat LLC</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
