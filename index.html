@@ -55,7 +55,8 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(88, 166, 255, 0.2);
             transition: transform 0.3s;
-            width: 300px;
+            width: 100%;
+            max-width: 350px;
             height: 400px;
             margin: 0 auto;
         }
@@ -78,7 +79,7 @@
             max-height: 100%;
         }
         .project-card .stepguide-logo {
-            padding: 10px;
+            padding: 5px;
             box-sizing: border-box;
         }
         .project-card .dynbo-logo {
@@ -86,7 +87,7 @@
             box-sizing: border-box;
         }
         .project-card .buylist-logo {
-            max-width: 80%;
+            max-width: 100%;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -105,6 +106,11 @@
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 576px) {
+            .project-card {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
