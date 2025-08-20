@@ -123,11 +123,19 @@
     </footer>
     <script>
         document.getElementById('submit-btn').addEventListener('click', function() {
+            var form = document.getElementById('contact-form');
             var messageElement = document.getElementById('form-message');
             messageElement.style.display = 'none'; // Hide any previous message
+
+            if (!form.checkValidity()) {
+                messageElement.textContent = 'Please fill out all required fields.';
+                messageElement.style.color = '#ff0000'; // Red text for error
+                messageElement.style.display = 'block';
+                return;
+            }
+
             grecaptcha.ready(function() {
                 grecaptcha.execute('6LcO3awrAAAAADrQcq4hiWc3kIzrY2DRGemsRg2D', {action: 'submit'}).then(function(token) {
-                    var form = document.getElementById('contact-form');
                     var formData = new FormData(form);
                     formData.append('g-recaptcha-response', token);
 
