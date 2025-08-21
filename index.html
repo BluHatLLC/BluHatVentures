@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BluHat Venture Incubator: Empowering innovation through groundbreaking projects like StepGuide and Dynbo. Turn visionary ideas into transformative realities.">
-    <meta name="keywords" content="venture incubator, innovation, startups, StepGuide, Dynbo, BluHat">
-    <title>BluHat - Pioneering Venture Incubator</title>
+    <meta name="description" content="BluHat Ventures: Building Cash-Generating SaaS Apps. Creators of Dynbo.com and StepGuide.app.">
+    <meta name="keywords" content="SaaS apps, cash-generating software, Dynbo, StepGuide, BluHat Ventures">
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="BluHat Ventures - Building Cash-Generating SaaS Apps">
+    <meta property="og:description" content="Showcasing our apps that drive scalable revenue.">
+    <meta property="og:image" content="images/bluhat-og-image.jpg"> <!-- Create a 1200x630 image teaser -->
+    <meta property="og:url" content="https://bluhatventures.com">
+    <meta property="og:type" content="website">
+    <title>BluHat Ventures - Building Cash-Generating SaaS Apps</title>
     <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js?render=6LcO3awrAAAAADrQcq4hiWc3kIzrY2DRGemsRg2D"></script>
+    <!-- Google Analytics (Replace UA-XXXX with your ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-X');
+    </script>
     <style>
         body { font-family: 'Poppins', sans-serif; overflow-x: hidden; }
         .hero { background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.8)), url('static/hero-bg.jpg') no-repeat center/cover; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; position: relative; }
@@ -23,6 +37,10 @@
         .cta-btn:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
         .about-section { background: #f9fafb; }
         .parallax { background-attachment: fixed; }
+        .nowrap { white-space: nowrap; } /* Prevents 'Cash-Generating' from wrapping */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; } /* Smaller font on mobile to ensure fit */
+        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -41,7 +59,7 @@
                 <ul class="flex space-x-6">
                     <li><a href="#home" class="hover:text-blue-200 transition">Home</a></li>
                     <li><a href="#about" class="hover:text-blue-200 transition">About</a></li>
-                    <li><a href="#projects" class="hover:text-blue-200 transition">Projects</a></li>
+                    <li><a href="#projects" class="hover:text-blue-200 transition">Apps</a></li>
                     <li><a href="#contact" class="hover:text-blue-200 transition">Contact</a></li>
                 </ul>
             </nav>
@@ -49,7 +67,7 @@
                 <ul class="flex flex-col space-y-4">
                     <li><a href="#home" class="hover:text-blue-200 transition">Home</a></li>
                     <li><a href="#about" class="hover:text-blue-200 transition">About</a></li>
-                    <li><a href="#projects" class="hover:text-blue-200 transition">Projects</a></li>
+                    <li><a href="#projects" class="hover:text-blue-200 transition">Apps</a></li>
                     <li><a href="#contact" class="hover:text-blue-200 transition">Contact</a></li>
                 </ul>
             </nav>
@@ -57,27 +75,29 @@
     </header>
     <section id="home" class="hero parallax">
         <div class="max-w-4xl px-6 animate-fade-in">
-            <h1 class="text-5xl md:text-7xl font-bold mb-4">Venture Incubator Extraordinaire</h1>
-            <p class="text-xl md:text-3xl mb-8">Transforming Bold Ideas into World-Changing Realities</p>
-            <a href="#projects" class="cta-btn bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg inline-block">Discover Our Projects</a>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Building <span class="nowrap">Cash-Generating</span> SaaS Apps</h1>
+            <p class="text-xl md:text-3xl mb-8">We Design, Build and Grow App Ideas – Showcasing Dynbo.com & StepGuide.app</p>
+            <a href="#projects" class="cta-btn bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg inline-block">Discover Our Apps</a>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-3xl animate-bounce">↓</div> <!-- Scroll indicator -->
         </div>
     </section>
     <section id="about" class="about-section py-20 px-6 md:px-12 text-center">
         <div class="max-w-3xl mx-auto animate-fade-in">
-            <h2 class="text-4xl font-bold text-blue-600 mb-6">About BluHat</h2>
-            <p class="text-lg text-gray-700 mb-8">At BluHat, we're not just incubating ventures—we're igniting revolutions. Our mission is to empower innovators with the tools, resources, and expertise to turn visionary concepts into scalable, impactful solutions. With a focus on cutting-edge technology and user-centric design, we bridge the gap between ideation and execution.</p>
+            <h2 class="text-4xl font-bold text-blue-600 mb-6">About BluHat Ventures</h2>
+            <p class="text-lg text-gray-700 mb-8">BluHat Ventures (BluHat LLC) builds SaaS apps using a design, build, grow process to generate scalable cash flow from subscribers. We focus on building innovative solutions that simplify workflows and bring exceptional value to the users.</p>
+            <h3 class="text-3xl font-bold text-blue-600 mb-6">Our Design, Build, Growth Process</h3>
             <div class="grid md:grid-cols-3 gap-8 mt-12">
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">Innovation<br>Driven</h3>
-                    <p class="text-gray-600">Pushing boundaries with AI, automation, and collaborative tools.</p>
+                    <h4 class="text-xl font-semibold mb-4">Design</h4>
+                    <p class="text-gray-600">Conceptualize and plan app features for user efficiency and revenue potential.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">Expert<br>Guidance</h3>
-                    <p class="text-gray-600">Seasoned mentors and strategic partnerships for accelerated growth.</p>
+                    <h4 class="text-xl font-semibold mb-4">Build</h4>
+                    <p class="text-gray-600">Develop robust SaaS solutions with scalable architecture.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-semibold mb-4">Global<br>Impact</h3>
-                    <p class="text-gray-600">Building solutions that solve real-world problems at scale.</p>
+                    <h4 class="text-xl font-semibold mb-4">Growth</h4>
+                    <p class="text-gray-600">Grow subscriber base and optimize for success.</p>
                 </div>
             </div>
         </div>
@@ -119,26 +139,23 @@
         </div>
     </section>
     <footer class="bg-gray-800 text-white py-6 text-center">
-        <p>© 2025 BluHat LLC. All rights reserved.</p>
+        <p>© 2025 BluHat LLC. All rights reserved. | <a href="/privacy" class="text-white hover:underline">Privacy Policy</a></p>
     </footer>
     <script>
         document.getElementById('submit-btn').addEventListener('click', function() {
             var form = document.getElementById('contact-form');
             var messageElement = document.getElementById('form-message');
             messageElement.style.display = 'none'; // Hide any previous message
-
             if (!form.checkValidity()) {
                 messageElement.textContent = 'Please fill out all required fields.';
                 messageElement.style.color = '#ff0000'; // Red text for error
                 messageElement.style.display = 'block';
                 return;
             }
-
             grecaptcha.ready(function() {
                 grecaptcha.execute('6LcO3awrAAAAADrQcq4hiWc3kIzrY2DRGemsRg2D', {action: 'submit'}).then(function(token) {
                     var formData = new FormData(form);
                     formData.append('g-recaptcha-response', token);
-
                     fetch('https://formspree.io/f/xgvzjpjq', {
                         method: 'POST',
                         body: formData,
